@@ -174,7 +174,7 @@ let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 " let g:hybrid_use_Xresources = 1
 " let g:rehash256 = 1
-colorscheme solarized
+colorscheme smyck
 set guifont=Inconsolata:h15
 set guioptions-=L
 
@@ -555,3 +555,11 @@ if !g:remoteSession
 endif
 
 " vim:ts=2:sw=2:et
+
+" =================== RSpec vim ==========================
+" RSpec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+
