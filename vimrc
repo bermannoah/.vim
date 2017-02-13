@@ -54,14 +54,6 @@ set re=1
 command! -nargs=* -complete=help Help vertical belowright help <args>
 autocmd FileType help wincmd L
 
-" Make Vim to handle long lines nicely.
-set wrap
-set textwidth=79
-set formatoptions=qrn1
-"set colorcolumn=79
-"set relativenumber
-"set norelativenumber
-
 " mail line wrapping
 au BufRead /tmp/mutt-* set tw=72
 
@@ -192,7 +184,6 @@ autocmd FileType qf wincmd J
 
 " Dont show me any output when I build something
 " Because I am using quickfix for errors
-"nmap <leader>m :make<CR><enter>
 
 " Some useful quickfix shortcuts
 ":cc      see the current error
@@ -306,11 +297,11 @@ function! XTermPasteBegin()
 endfunction
 
 " set 80 character line limit
-if exists('+colorcolumn')
-  set colorcolumn=80
-else
-  au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
-endif
+" if exists('+colorcolumn')
+  "set colorcolumn=80
+"else
+ "" au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+"endif
 
 " ----------------------------------------- "
 " File Type settings 			    		"
