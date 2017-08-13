@@ -29,6 +29,7 @@ set hidden
 
 set ruler                       " Show the cursor position all the time
 au FocusLost * :wa              " Set vim to save the file on focus out.
+au FocusGained,BufEnter * :checktime " trigger autoread when changing buffers inside vim (https://vi.stackexchange.com/questions/444/how-do-i-reload-the-current-file)
 
 set fileformats=unix,dos,mac    " Prefer Unix over Windows over OS 9 formats
 
