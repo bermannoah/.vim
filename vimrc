@@ -59,7 +59,6 @@ au BufRead /tmp/mutt-* set tw=72
 
 set autoindent
 set complete-=i
-set showmatch
 set smarttab
 
 set et
@@ -416,49 +415,6 @@ let g:cfmt_style = '-linux'
 
 " ================== linuxsty ====================
 "let g:linuxsty_patterns = ['/usr/src/', '/linux']
-
-" ==================== Vim-go ====================
-let g:go_fmt_fail_silently = 0
-let g:go_fmt_command = "goimports"
-let g:go_autodetect_gopath = 1
-let g:go_term_enabled = 1
-let g:go_snippet_engine = "neosnippet"
-let g:go_highlight_space_tab_error = 0
-let g:go_highlight_array_whitespace_error = 0
-let g:go_highlight_trailing_whitespace_error = 0
-let g:go_highlight_extra_types = 0
-let g:go_highlight_operators = 0
-let g:go_highlight_build_constraints = 1
-
-
-au FileType go nmap <Leader>s <Plug>(go-def-split)
-au FileType go nmap <Leader>v <Plug>(go-def-vertical)
-au FileType go nmap <Leader>i <Plug>(go-info)
-au FileType go nmap <Leader>l <Plug>(go-metalinter)
-
-au FileType go nmap <leader>r  <Plug>(go-run)
-
-au FileType go nmap <leader>b  <Plug>(go-build)
-au FileType go nmap <leader>t  <Plug>(go-test)
-au FileType go nmap <leader>dt  <Plug>(go-test-compile)
-au FileType go nmap <Leader>d <Plug>(go-doc)
-
-au FileType go nmap <Leader>e <Plug>(go-rename)
-
-" neovim specific
-if has('nvim')
-  au FileType go nmap <leader>rt <Plug>(go-run-tab)
-  au FileType go nmap <Leader>rs <Plug>(go-run-split)
-  au FileType go nmap <Leader>rv <Plug>(go-run-vertical)
-endif
-
-" I like these more!
-augroup go
-  autocmd!
-  autocmd Filetype go command! -bang A call go#alternate#Switch(<bang>0, 'edit')
-  autocmd Filetype go command! -bang AV call go#alternate#Switch(<bang>0, 'vsplit')
-  autocmd Filetype go command! -bang AS call go#alternate#Switch(<bang>0, 'split')
-augroup END
 
 " ==================== delimitMate ====================
 let g:delimitMate_expand_cr = 1
