@@ -46,7 +46,6 @@ Currently using version 2.2 of Pathogen
 * [github.com/moorereason/vim-markdownfmt](https://github.com/moorereason/vim-markdownfmt.git)
 * [github.com/terryma/vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors.git)
 * [github.com/fatih/vim-nginx](https://github.com/fatih/vim-nginx.git)
-* [github.com/hynek/vim-python-pep8-indent](https://github.com/hynek/vim-python-pep8-indent.git)
 * [github.com/mhinz/vim-sayonara](https://github.com/mhinz/vim-sayonara.git)
 * [fedorapeople.org/home/fedora/wwoods/public/vim-scripts.git](git://fedorapeople.org/home/fedora/wwoods/public_git/vim-scripts.git)
 * [github.com/cespare/vim-toml](https://github.com/cespare/vim-toml.git)
